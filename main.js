@@ -6,13 +6,15 @@ Ricordiamoci di incrementare il contatore, o comunque di inserire una condizione
  */
 
 
+
+let divElement = document.querySelector('ul')
+let liElement = document.createElement('li')
 let elementoSpesa;
-let listaSpesa = ['banane', 'yogurt', 'pollo' , 'bresaola', 'tonno' , 'tacchino']
-console.log(listaSpesa);
-let i = -1
-while (i < 5) {
+let listaSpesa = ['banane ', 'yogurt ', 'pollo ' , 'bresaola ', 'tonno ' , 'tacchino']
+let i = 0
+while (i < listaSpesa.length) {
+    elementoSpesa = listaSpesa[i]
+    liElement = elementoSpesa
+    divElement.append(liElement)
     i++
-    elementoSpesa = listaSpesa
-  console.log(elementoSpesa[i]);
-    
 }
