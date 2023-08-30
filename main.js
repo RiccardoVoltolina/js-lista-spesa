@@ -8,13 +8,14 @@ Ricordiamoci di incrementare il contatore, o comunque di inserire una condizione
 
 
 let divElement = document.querySelector('ul')
-let liElement = document.createElement('li')
 let elementoSpesa;
 let listaSpesa = ['banane ', 'yogurt ', 'pollo ' , 'bresaola ', 'tonno ' , 'tacchino']
 let i = 0
 while (i < listaSpesa.length) {
+    let liElement = document.createElement('li')
     elementoSpesa = listaSpesa[i]
-    liElement = elementoSpesa
+    liElement.append(elementoSpesa)
     divElement.append(liElement)
     i++
+  
 }
